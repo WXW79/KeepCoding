@@ -5,6 +5,42 @@
   <title>Chessboard</title>
   <style>
     /* Write your code here */
+    .container
+    {
+      display: grid;
+      /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+      grid-template-columns: repeat(8, 1fr) ;
+      grid-template-rows:  repeat(8, 1fr) ;;
+
+      width: 800px;
+      column-gap:0px;
+      row-gap: 0px;
+    }
+
+    .white
+    {
+      background-color: #f0d9b5;
+      /* width: 100px;
+      height: 100px; */
+
+    }
+
+    .black
+    {
+      background-color: #b58863;
+      /* width: 100px;
+      height: 100px; */
+    }
+
+    .container>div
+    {
+      margin: 0;
+      padding: 0;
+      width: 100px;
+      height: 100px;
+    }
+
     /* Each square should be 100px by 100px */
     /* My colours for white: #f0d9b5, black: #b58863 */
   </style>
