@@ -7,16 +7,24 @@
     /* Write your code here */
     .container
     {
-      display: grid;
+      display: inline-grid;
       /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
       grid-template-columns: repeat(8, 1fr) ;
-      grid-template-rows:  repeat(8, 1fr) ;;
-
-      width: 800px;
-      column-gap:0px;
-      row-gap: 0px;
+      grid-template-rows:  repeat(8, 1fr) ;
     }
+
+/* Write your CSS code below to make the purple items size, grow and shrink like the green ones.*/
+
+.grid-container {
+
+  display: grid;
+  grid-template-columns: auto 400px minmax(200px, 500px);
+  grid-template-rows: 1fr 1fr 2fr auto;
+
+}
+ 
+
 
     .white
     {
